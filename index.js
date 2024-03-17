@@ -1,12 +1,12 @@
 // When the button is clicked
-$("button").on("click", function(){
+$("button").("onClick", function(){
     var key = $(this).html();
     play(key);
     animateBtn(key);
 })
 
 // When the key is pressed
-$(document).on("keydown", function(event){
+$(document).("onKeydown", function(event){
     var keyPressed = event.key;
     play(keyPressed);
     animateBtn(keyPressed);
